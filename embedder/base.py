@@ -8,7 +8,7 @@ import warnings
 import pandas as pd
 
 
-checkpoint = ModelCheckpoint('weights.h5', monitor='val_loss',
+checkpoint = ModelCheckpoint('.weights.h5', monitor='val_loss',
                              verbose=0, save_best_only=True,
                              save_weights_only=True,
                              mode='auto')
